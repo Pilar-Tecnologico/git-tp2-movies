@@ -15,7 +15,8 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    const movie = movies.filter(data => data.genre.includes(genre)? data : "");
+    return movie.map(data => data.title);
 }
 
 function main(){
