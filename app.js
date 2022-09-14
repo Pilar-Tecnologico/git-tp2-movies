@@ -5,7 +5,8 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    const firstMovies= movies.slice(0, 10);
+    return firstMovies.map( data => data.title);
 }
 
 /**
