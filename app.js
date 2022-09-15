@@ -5,7 +5,13 @@ const movies = require("./movies.json");
  * @returns {Array}
  */
 function getFirstTenMovies() {
-  //complete with your code
+  const first10Movies = movies.slice(0, 10);
+  return first10Movies.map(
+    (movie, index) =>
+      `\n movie ${index + 1}: ${movie.imdb_title_id} ${movie.title} ${
+        movie.genre
+      }`
+  );
 }
 
 /**
