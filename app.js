@@ -5,7 +5,14 @@ const movies = require("./movies.json");
  * @returns {Array}
  */
 function getFirstTenMovies() {
-  //complete with your code
+  const first10Movies = movies.slice(0, 10);
+  return first10Movies.map(
+    (movie, index) =>
+      `\n movie ${index + 1}: ${movie.imdb_title_id} ${movie.title} ${
+        movie.genre
+      }`
+  );
+ 
 }
 
 /**
@@ -14,7 +21,8 @@ function getFirstTenMovies() {
  * @returns {Array}
  */
 function getMoviesWithGenre(genre) {
-  //complete with your code
+  const filter = movies.filter(movie => movie.genre.includes(genre));
+  return filter.map(movie => `\n ${movie.title} => ${movie.genre}`);
 }
 
 function main() {
