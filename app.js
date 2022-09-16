@@ -1,20 +1,32 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * First ten movies
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    let tenNames =[]
+ movies.forEach(nameMovie => {
+    if (tenNames.length < 10){
+        tenNames.push(nameMovie.title)
+    }
+ })
+ return tenNames
 }
 
 /**
- * Complete with a brief definition of what this function should do
+ * Selected movies in genres
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let moviesNames = []
+    movies.forEach (moviesElement => {
+        if (moviesElement.genre.indexOf(genre) > -1){
+            moviesNames.push(moviesElement.title);
+        }
+    })
+    return moviesNames
 }
 
 function main(){
