@@ -12,6 +12,7 @@ function getFirstTenMovies() {
         movie.genre
       }`
   );
+ 
 }
 
 /**
