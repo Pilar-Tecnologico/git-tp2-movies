@@ -21,7 +21,18 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let filter= new RegExp(`${genre}`)
+    let filteredMovies=[]
+    for (const movie of movies) {
+        if(filter.exec(movie.genre)){
+            filteredMovies.push(movie.title)
+
+        }
+
+    }
+
+
+    return filteredMovies;
 }
 
 function main(){
