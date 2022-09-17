@@ -5,7 +5,12 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    let titles = [];
+    let count = 0;
+        movies.find(object =>{
+            if(count < 10){titles[count] = object.title;}count++;
+        });
+    return titles;
 }
 
 /**
@@ -20,7 +25,7 @@ function getFirstTenMovies(){
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
-    console.log(`Only first ten movies:\n${firstTenMovies}\n`);
+    console.log(`Only first ten movies:`, firstTenMovies);
     console.log(`Only Drama movies:\n${dramaMovies}\n`);
 }
 
