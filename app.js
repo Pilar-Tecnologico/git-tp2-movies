@@ -17,7 +17,8 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-    
+    const moviesforGenre=movies.filter(gen => gen.genre.includes('Drama'));
+    return JSON.stringify(moviesforGenre, null, ' ');
 }
 
 function main(){
