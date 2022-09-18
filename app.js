@@ -7,6 +7,11 @@ const movies = require('./movies.json');
 function getFirstTenMovies(){
     
     //complete with your code
+
+    let moviesCopia = movies.slice()
+    moviesCopia.length = 10
+    return moviesCopia
+
 }
 
 /**
@@ -16,13 +21,15 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    let moviesResults= movies.filter(results => results.genre = genre)
+    return moviesResults
 }
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
-    console.log(`Only first ten movies:\n${firstTenMovies}\n`);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log(`Only first ten movies`, firstTenMovies);
+    console.log(`Only Drama movies`, dramaMovies);
 }
 
 main();
