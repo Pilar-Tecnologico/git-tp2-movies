@@ -19,14 +19,26 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let result = [];
+    let i = 0;
+    //search in movies
+    movies.find(object =>{
+        //if there is equality we assign to result
+        if(object.genre === genre){
+            result[i] = object.title;
+            i++;
+        }
+    });
+
+    //return the array
+    return result;
 }
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
     console.log(`Only first ten movies:`, firstTenMovies);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log(`Only Drama movies:`, dramaMovies);
 }
 
 main();
