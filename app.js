@@ -1,20 +1,24 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * Get only first ten movies, from movies.json.
  * @returns {Array}
  */
 function getFirstTenMovies(){
     //complete with your code
+    const firsttenMovies = movies.slice(0,10);
+    return JSON.stringify(firsttenMovies, null, ' ');
 }
 
 /**
- * Complete with a brief definition of what this function should do
+ * Get all movies of genre given. They can have more than one genre.
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    const moviesforGenre=movies.filter(gen => gen.genre.includes('Drama'));
+    return JSON.stringify(moviesforGenre, null, ' ');
 }
 
 function main(){
