@@ -5,13 +5,8 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    const first10Movies = movies.slice(0, 10);
-    return first10Movies.map(
-      (movie, index) =>
-        `\n movie ${index + 1}: ${movie.imdb_title_id} ${movie.title} ${
-          movie.genre
-        }`
-    );
+    const firstTenMovies = movies.slice(0,10);
+    return firstTenMovies;
 }
 
 /**
@@ -20,7 +15,8 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    
+    const moviesGenre = movies.filter(a => a.genre == genre);
+    return moviesGenre;
 }
 
 function main(){
