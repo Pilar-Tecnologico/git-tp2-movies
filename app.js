@@ -6,6 +6,13 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    let topTen = []
+    movies.forEach( topTenNames => {
+        if(topTen.length < 10){
+            topTen.push(topTenNames.title)
+        }
+    })
+    return topTen
 }
 
 /**
@@ -15,13 +22,15 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    let moviesGenre = movies.filter(res => res.genre == genre)
+    return moviesGenre
 }
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
-    console.log(`Only first ten movies:\n${firstTenMovies}\n`);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log(`Only first ten movies:`, firstTenMovies);
+    console.log(`Only Drama movies:`,dramaMovies);
 }
 
 main();
