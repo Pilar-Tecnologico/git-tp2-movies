@@ -6,7 +6,10 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    const firsttenMovies = movies.slice(0,10);
+    return JSON.stringify(firsttenMovies, null, ' ');
 }
+
 
 /**
  * Here the function apply for a parameter of character string and return an array with all the movies of this genre
