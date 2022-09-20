@@ -8,9 +8,11 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+
     const result = movies.map((movie) => movie.title).slice(0,9);
     console.log(result)
    
+
     
 }
 
