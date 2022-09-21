@@ -9,6 +9,8 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    for(i=0;i<10;i++)
+  {console.log(movies[i])}
 }
 
 /**
