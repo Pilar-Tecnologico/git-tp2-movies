@@ -21,6 +21,7 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    //No se como resolverlo :c
 }
 
 function main(){
