@@ -2,6 +2,9 @@ const movies = require('./movies.json');
 
 /**
  * Complete with a brief definition of what this function should do
+ * 
+ * Print on screen the first 10 movies of a collection
+ * 
  * @returns {Array}
  */
 function getFirstTenMovies(){
