@@ -15,6 +15,7 @@ function getFirstTenMovies(){
 
 /**
  * Complete with a brief definition of what this function should do
+ * Print all drama genre movies
  * @param  {String} genre
  * @returns {Array}
  */
