@@ -5,7 +5,14 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    const slicedMovies= movies.slice(0,10);
+    let movieTitles=[]
+    for (const movie of slicedMovies) {
+        movieTitles.push(movie.title)
+        
+    }
+    return movieTitles;
+
 }
 
 /**
@@ -14,7 +21,18 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let filter= new RegExp(`${genre}`)
+    let filteredMovies=[]
+    for (const movie of movies) {
+        if(filter.exec(movie.genre)){
+            filteredMovies.push(movie.title)
+
+        }
+
+    }
+
+
+    return filteredMovies;
 }
 
 function main(){
