@@ -1,12 +1,15 @@
 const movies = require('./movies.json');
 
 /**
- * Get the first 10 movies in the list
+ * Get the first 10 movies names in the list
  * @returns {Array}
  */
 function getFirstTenMovies(){
     //complete with your code
-
+    const moviesArray =[]
+    movies.slice(0,10).map(e=> moviesArray.push(e.title))
+    console.log(moviesArray)
+     return moviesArray
 }
 
 /**
