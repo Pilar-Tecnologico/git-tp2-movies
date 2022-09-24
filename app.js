@@ -8,17 +8,21 @@ function getFirstTenMovies(){
     //complete with your code
     const moviesArray =[]
     movies.slice(0,10).map(e=> moviesArray.push(e.title))
-    console.log(moviesArray)
+    console.log(moviesArray, moviesArray.length)
      return moviesArray
 }
 
 /**
- * Get an array of movies given genre
+ * Get an array of movies name given genre
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    const moviesByGenre = []
+    movies.filter(e=>e.genre==genre).map(e=>moviesByGenre.push(e.title))
+    console.log(moviesByGenre.length)
+  return moviesByGenre
 }
 
 function main(){
