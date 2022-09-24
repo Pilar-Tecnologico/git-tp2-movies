@@ -21,9 +21,9 @@ function getFirstTenMovies(){
 }
 
 function main(){
-    // const firstTenMovies = getFirstTenMovies();
+    const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
-    // console.log(`Only first ten movies`, firstTenMovies);
+    console.log(`Only first ten movies`, firstTenMovies);
     console.log(`Only Drama movies`, dramaMovies);
 }
 
