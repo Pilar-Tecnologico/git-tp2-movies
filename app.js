@@ -22,7 +22,11 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
 function getMoviesWithGenre(genre){
-    //complete with your code
+    //complete with your code 
+    const moviesDrama = movies.filter(function(movie) {
+        return movie.genre === 'Drama';
+        })
+    console.log(moviesDrama);
 }
 
 function main(){
