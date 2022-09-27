@@ -6,6 +6,14 @@ Returns the first 10 movies of the array
  */
 function getFirstTenMovies(){
     //complete with your code
+    let FirstTenMovies =[]
+            movies.forEach(nameMovie => {
+                if (FirstTenMovies.length < 10){
+                  FirstTenMovies.push(nameMovie.title)
+                }
+             })
+    return FirstTenMovies
+   
 }
 
 /**
