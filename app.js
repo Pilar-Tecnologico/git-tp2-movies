@@ -5,7 +5,15 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    let diezPeliculas = [];
+    let contador = 0;
+    for (let movie of movies) {
+        if (contador < 10){
+        diezPeliculas.push(movie.title)	
+        }
+    contador++;
+    }
+    return diezPeliculas;
 }
 
 /**
@@ -13,8 +21,12 @@ function getFirstTenMovies(){
  * @param  {String} genre
  * @returns {Array}
  */
- function getMoviesWithGenre(genre){
-    //complete with your code
+function getMoviesWithGenre(genre){
+    //complete with your code 
+    const moviesDrama = movies.filter(function(movie) {
+        return movie.genre === 'Drama';
+        })
+    console.log(moviesDrama);
 }
 
 function main(){
