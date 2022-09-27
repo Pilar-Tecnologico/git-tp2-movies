@@ -7,7 +7,11 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
-    
+    let tenMovies = new Array();
+    for (var i = 0; i < 10; i++) {
+        tenMovies.push(movies[i].title);
+    }
+    return tenMovies;
 }
 
 /**
