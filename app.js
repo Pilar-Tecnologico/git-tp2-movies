@@ -7,7 +7,11 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
-    
+    let tenMovies = new Array();
+    for (var i = 0; i < 10; i++) {
+        tenMovies.push(movies[i].title);
+    }
+    return tenMovies;
 }
 
 /**
@@ -18,7 +22,13 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-    
+    var myGenre = new Array();
+    for (var i = 0; i < movies.length; i++) {
+        if ( movies[i].genre.match(genre)) {
+            myGenre.push(movies[i].title);
+        }
+    }
+    return myGenre;
 }
 
 function main(){
