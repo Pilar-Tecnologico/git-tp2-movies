@@ -6,6 +6,7 @@ const movies = require("./movies.json");
  */
 function getFirstTenMovies() {
   //complete with your code
+  return movies.splice(0, 10);
 }
 
 /**
@@ -15,6 +16,7 @@ function getFirstTenMovies() {
  */
 function getMoviesWithGenre(genre) {
   //complete with your code
+  return movies.filter((movie) => movie.genre === genre);
 }
 
 function main() {
