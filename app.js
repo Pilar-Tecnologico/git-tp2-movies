@@ -6,6 +6,7 @@ const movies = require("./movies.json");
  */
 function getFirstTenMovies() {
   //complete with your code
+  return movies.splice(0, 10);
 }
 
 /**
