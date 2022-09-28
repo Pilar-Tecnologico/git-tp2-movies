@@ -2,19 +2,26 @@ const movies = require('./movies.json');
 
 /**
  * Complete with a brief definition of what this function should do
+ * 
+ * Print on screen the first 10 movies of a collection
+ * 
  * @returns {Array}
  */
 function getFirstTenMovies(){
     //complete with your code
+    for(i=0;i<10;i++)
+  {console.log(movies[i])}
 }
 
 /**
  * Complete with a brief definition of what this function should do
+ * Print all drama genre movies
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    //No se como resolverlo :c
 }
 
 function main(){
