@@ -1,20 +1,24 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * This function returns a Array top ten movies.
  * @returns {Array}
  */
 function getFirstTenMovies(){
     //complete with your code
+    const tenMovies = movies.slice(0, 10);
+    console.log (tenMovies);
 }
-
 /**
- * Complete with a brief definition of what this function should do
+ * This function returns a Array based on the genre or genders introduced.
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    const genreMovie = movies.filter((movie) => movie.genre === genre);
+    console.log (genreMovie);
+
 }
 
 function main(){
