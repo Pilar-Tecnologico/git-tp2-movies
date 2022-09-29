@@ -27,4 +27,6 @@ function main(){
 }
     //Primer ejercicio resuelto
 
+    //Segundo ejercicio resuelto, (Peliculas contengan genero por parametro)
+
 main();
