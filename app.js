@@ -22,7 +22,13 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-    
+    MoviesWithGenre=[]
+                movies.forEach(ElementMovies=> {
+                    if(ElementMovies.genre.indexOf(genre) > -1){
+                        MoviesWithGenre.push(ElementMovies.title);
+                    }
+                })
+                return MoviesWithGenre
 }
 
 function main(){
