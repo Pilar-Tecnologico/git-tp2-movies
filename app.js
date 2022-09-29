@@ -32,7 +32,7 @@ function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Sci-Fi');
     console.log(`Only first ten movies`, firstTenMovies);
-    //console.log(`Only Sci-Fi movies:`,dramaMovies);
+    console.log(`Only Sci-Fi movies:`,dramaMovies);
 
 }
 
