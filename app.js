@@ -6,8 +6,9 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    const tenMovies = movies.slice(0, 10);
+    console.log (tenMovies);
 }
-
 /**
  * This function returns a Array based on the genre or genders introduced.
  * @param  {String} genre
