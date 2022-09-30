@@ -23,7 +23,11 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-}
+    const movie = movies.filter(movie => movie.genre === genre);
+    const moviesByGenre = movie.map((moviesByGenre) => moviesByGenre.title);
+    return moviesByGenre;
+};
+
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
