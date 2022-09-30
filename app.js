@@ -7,7 +7,13 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
-}
+    const tenMovies = movies.map((tenMovies) => tenMovies.title);
+    
+    if (tenMovies.length > 10) {
+        tenMovies.length = 10;
+        return tenMovies;
+      } 
+};
 
 /**
  * Complete with a brief definition of what this function should do
@@ -17,7 +23,11 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-}
+    const movie = movies.filter(movie => movie.genre === genre);
+    const moviesByGenre = movie.map((moviesByGenre) => moviesByGenre.title);
+    return moviesByGenre;
+};
+
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
