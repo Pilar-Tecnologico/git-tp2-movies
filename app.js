@@ -18,7 +18,13 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let genres = new Array();
+    for (let i = 0; i < movies.length; i++) {
+        if (movies[i].genre.match(genre)) {
+            genres.push(movies[i].title);
+        }
+    }
+    return genres;
 }
 
 function main(){
