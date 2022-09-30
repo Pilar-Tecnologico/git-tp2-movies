@@ -25,5 +25,8 @@ function main(){
     console.log(`Only first ten movies:\n${firstTenMovies}\n`);
     console.log(`Only Drama movies:\n${dramaMovies}\n`);
 }
+    //Primer ejercicio resuelto
+
+    //Segundo ejercicio resuelto, (Peliculas contengan genero por parametro)
 
 main();
