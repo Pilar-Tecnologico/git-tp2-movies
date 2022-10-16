@@ -6,6 +6,7 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    se me esta complicando con java script profe abondare mas al respeto 
 }
 
 /**
